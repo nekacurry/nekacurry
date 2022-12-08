@@ -18,24 +18,22 @@ padding 10px;
 `
 
 const Logo = () => {
-  const eyeDoImg = `/icons/eyedo.png`
+  const eyeDoImg = `/images/eyedogif.gif`
 
   return (
-    <Link href="/">
-      <a>
-        <LogoBox>
-          <Image src={eyeDoImg} width={20} height={20} alt="logo"/>
-          <Text 
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c'
-            fontWeight="bold"
-            ml={3}>
-              Anneka Curry
-           </Text>
-        </LogoBox>
-      </a>
-    </Link>
-  )
+    (<Link href="/">
+      <LogoBox>
+        <Image src={eyeDoImg} width={20} height={20} alt="logo"/>
+        <Text 
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily='M PLUS Rounded 1c'
+          fontWeight="bold"
+          ml={2}>
+            Anneka Curry
+         </Text>
+      </LogoBox>
+    </Link>)
+  );
 }
 
 export default Logo
