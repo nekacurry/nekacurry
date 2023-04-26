@@ -26,7 +26,7 @@ const Logo = () => {
         <Image src={eyeDoImg} width={20} height={20} alt="logo"/>
         <Text 
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-          fontFamily='M PLUS Rounded 1c'
+          fontFamily='Quicksand'
           fontWeight="bold"
           ml={2}>
             Anneka Curry
