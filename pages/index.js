@@ -4,9 +4,11 @@ import Paragraph from "../components/paragraph"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import NextLink from 'next/link'
 import { BioSection, BioYear } from "../components/bio"
+import Layout from "../components/layouts/article"
 
 const Page = () => {
   return (
+    <Layout>
     <Container>
       <Box 
         borderRadius="lg" 
@@ -24,7 +26,7 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Anneka Curry
           </Heading> 
-          <p>Media Magical Girl ( Developer // Artist // Content Creator ) </p>
+          <p>Developer // Artist </p>
         </Box>
         <Box 
           flexShrink={0} 
@@ -54,11 +56,9 @@ const Page = () => {
           Whether it be beautiful, responsive websites, graphic design, or cosplay, Anneka uses her dedication to bring a fresh look to any project.
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button as={NextLink} href="/projects" rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Portfolio
             </Button>
-          </NextLink>
         </Box>
       </Section>
       <Section delay={0.2}>
@@ -84,6 +84,7 @@ const Page = () => {
         </BioSection>
       </Section>
     </Container>
+    </Layout>
   )
 }
 
