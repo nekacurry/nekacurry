@@ -13,7 +13,7 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Anneka Curry
           </Heading> 
-          <p>Advanced Media Creation Girl</p>
+          {/* <p>Advanced Media Creation Girl</p> */}
         </Box>
       </Box>
     </Container>
