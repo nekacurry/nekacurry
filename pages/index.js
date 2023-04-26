@@ -51,7 +51,7 @@ const Page = () => {
         <Paragraph>
           Anneka is a 2023 grad and full-stack developer based in the Midwestern U.S. with a passion for all things creative. 
           She has worked to launch multiple products from design to development, and has a knack for problem-solving with code.
-          Whether it be beautiful, responsive websites, graphic design, or streaming, Anneka uses her dedication to bring a fresh look to any project.
+          Whether it be beautiful, responsive websites, graphic design, or cosplay, Anneka uses her dedication to bring a fresh look to any project.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
